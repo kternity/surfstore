@@ -1,6 +1,8 @@
 
 .footer {
-   background-color:burlywood;
+   background-color:#dadada;
+   padding: 15px 0 10px 0;
+   font-size: 12px;
 }
 
 .footer label {
