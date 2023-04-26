@@ -26,13 +26,12 @@ function getTotal() {
 
 function addProduct() {
    console.log("Adding " + quantity + " " + props.data.title)
-   // console.log(`Adding ${quantity} ${props.data.title}`);
 }
 
 
 function handleAdd(){
    console.log("Botton clicked!", props.data);
-   addProductsToCart();
+   addProductsToCart(props.data);
 }
 
 

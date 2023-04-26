@@ -1,0 +1,19 @@
+.cart img {
+   width: 120px;
+}
+
+.cart .prod-row{
+   display: flex;
+   margin: 10px 30px;
+   padding: 10px;
+   border: 1 px solid #6a6a6a;
+   justify-content: center;
+   align-items: center;
+}
+
+.prod-row h5 {
+   flex: 4;
+}
+.prod-row label {
+   flex: 2;
+}
