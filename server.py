@@ -1,6 +1,6 @@
 from flask import Flask
 import json
-
+from mock_data import catalog
 
 app = Flask("server")
 
@@ -24,5 +24,24 @@ def version():
         "yourzip":"your",
    }
    return json.dumps(version)
+
+
+
+
+@app.get("/api/catalog")
+def get_catalog():
+    return json.dumps(catalog)
+
+
+
+
+@app.get('/test/numbers')
+def get_numbers():
+   result = []
+   for n in range(1,21):
+       if n != 13 and n != 17:
+           result.append(n)
+
+   return json.dumps(result)
 
 app.run(debug=True)
