@@ -1,0 +1,16 @@
+
+about {
+   background-color:aquamarine;
+   text-align: center;
+   min-height: 89vh;
+}
+
+about button {
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.about h6 {
+   color: rgb(236, 140, 123);
+}
+

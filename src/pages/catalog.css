@@ -1,0 +1,8 @@
+.catalog {
+   background-color:rgba(216, 250, 239, 0.676);
+   min-height: 93vh;
+}
+
+.catalog .btn-filter{
+   margin: 5px;
+}
