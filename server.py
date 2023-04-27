@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, request
 import json
 from mock_data import catalog
+from config import db
 
 app = Flask("server")
 
@@ -31,6 +32,17 @@ def version():
 @app.get("/api/catalog")
 def get_catalog():
     return json.dumps(catalog)
+
+
+#save products
+@app.post("/api/catalog")
+def save_product():
+    product = request.get_json()
+    db.products.insert_one(product)
+
+    product["_id"] = str(product["_id"]) # clean the objectID from the obj
+
+    return json.dumps(product)
 
 
 @app.get("/api/catalog/<category>")
