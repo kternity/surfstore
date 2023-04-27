@@ -1,4 +1,6 @@
-var catalog = [
+import axios from 'axios';
+
+const catalog = [
      {
       "title": "Board 1",
       "category": "Short",
@@ -85,12 +87,9 @@ var catalog = [
 ];
 
 class DataService {
-
-   getProducts() {
-      //Todo: connect ot server and retrieve to products to display
-      return catalog;
+   async getCatalog() {
+      let response = await axios.get("http://127.0.0.1:5000/api/catalog");
+      return response.data;
    }
 }
-
-
 export default DataService;

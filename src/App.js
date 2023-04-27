@@ -1,6 +1,4 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -10,10 +8,13 @@ import Home from './pages/home';
 import About from './pages/about';
 import NotFound from './pages/notFound';
 import Cart from './pages/cart';
+import GlobalData from './store/globalData';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import GlobalData from './store/globalData';
 
 function App() {
   return (
