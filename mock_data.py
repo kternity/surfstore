@@ -2,14 +2,14 @@ catalog = [
          {
       "title": "Board 1",
       "category": "Short",
-      "price": 12.99,
+      "price": 2.99,
       "image": "board_01.webp",
       "_id": "asdlkhg1123j1"
    },
    {
       "title": "Board 2",
       "category": "Short",
-      "price": 12.99,
+      "price": 1.99,
       "image": "board_02.webp",
       "_id": "asgdlkh1123j2"
    },
