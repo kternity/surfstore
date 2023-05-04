@@ -3,7 +3,7 @@ import DataContext from "./dataContext";
 
 function GlobalData(props){
 const [cart, setCart] =useState ([]);
-const [afskuser, setFakeUser] = useState ({name: "kenneth"});
+const [fakeuser, setFakeUser] = useState ({name: "kenneth"});
 //functions
 function addProductsToCart(product) {
    console.log("Global is called");
