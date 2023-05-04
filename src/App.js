@@ -10,9 +10,9 @@ import Home from './pages/home';
 import About from './pages/about';
 import NotFound from './pages/notFound';
 import Cart from './pages/cart';
-
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// comment
 import GlobalData from './store/globalData';
 
 function App() {
